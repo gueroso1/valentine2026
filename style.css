@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #ff9ecf, #ffc3e0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.page {
+    display: none;
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+}
+
+.page.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    width: 100%;
+}
+
+.gif {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #c2185b;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.4s ease;
+
+}
+
+.green {
+    background: #2ecc71;
+    color: white;
+}
+
+.green:hover {
+    background: #27ae60;
+    transform: scale(1.05);
+}
+
+.red {
+    background: #e74c3c;
+    color: white;
+}
+
+.red:hover {
+    background: #c0392b;
+    transform: scale(1.05);
+}
+
+.pink {
+    background: #ff4fa3;
+    color: white;
+    margin-top: 20px;
+}
+
+.pink:hover {
+    background: #e91e63;
+    transform: scale(1.08);
+}
+
+/* Responsivo */
+@media (max-width: 500px) {
+    .card {
+        padding: 20px;
+    }
+}
